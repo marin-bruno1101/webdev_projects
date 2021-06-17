@@ -3,7 +3,7 @@ const img = document.querySelectorAll("#img img");
 
 let idx = 0;
 
-function carousel() {
+function slideshow() {
     idx++;
 
     if (idx > img.length - 1) {
@@ -13,4 +13,4 @@ function carousel() {
     imgs.style.transform = `translateX(${-idx * 650}px)`;
 }
 
-setInterval(carousel, 1800);
+setInterval(slideshow, 1800);
