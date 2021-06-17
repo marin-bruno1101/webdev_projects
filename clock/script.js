@@ -4,7 +4,7 @@ const hour = document.querySelector('[data-hour-hand]');
 const min = document.querySelector('[data-minute-hand]');
 const sec = document.querySelector('[data-second-hand]');
 
-function setDate(){
+function setDate() {
     const currentDate = new Date();
     const seconds = (currentDate.getSeconds()) / 60;
     const minutes = (seconds + currentDate.getMinutes()) / 60;
@@ -14,7 +14,7 @@ function setDate(){
     setRotation(hour, hours);
 }
 
-function setRotation(element, rotationRatio){
+function setRotation(element, rotationRatio) {
     element.style.setProperty('--rotation', rotationRatio * 360);
 }
 
